@@ -1,0 +1,894 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD29C238-4710-4FF7-BD67-4F76E51902A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yaesoft.DSI.Web</RootNamespace>
+    <AssemblyName>Yaesoft.DSI.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DSI_ModuleConfig.xml" />
+    <Content Include="App_Themes\Summer\Button\AddDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\AddOut.gif" />
+    <Content Include="App_Themes\Summer\Button\AddOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ApprovalOver.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchOut.gif" />
+    <Content Include="App_Themes\Summer\Button\BatchOver.gif" />
+    <Content Include="App_Themes\Summer\Button\btnBg.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelOut.gif" />
+    <Content Include="App_Themes\Summer\Button\CancelOver.gif" />
+    <Content Include="App_Themes\Summer\Button\DelDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DelOut.gif" />
+    <Content Include="App_Themes\Summer\Button\DelOver.gif" />
+    <Content Include="App_Themes\Summer\Button\Disabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableOut.gif" />
+    <Content Include="App_Themes\Summer\Button\DisableOver.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableOut.gif" />
+    <Content Include="App_Themes\Summer\Button\EnableOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ExportOver.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadOut.gif" />
+    <Content Include="App_Themes\Summer\Button\HaveReadOver.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportOut.gif" />
+    <Content Include="App_Themes\Summer\Button\ImportOver.gif" />
+    <Content Include="App_Themes\Summer\Button\LoginOut.png" />
+    <Content Include="App_Themes\Summer\Button\LoginOver.png" />
+    <Content Include="App_Themes\Summer\Button\Out.gif" />
+    <Content Include="App_Themes\Summer\Button\Over.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveOut.gif" />
+    <Content Include="App_Themes\Summer\Button\SaveOver.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchDisabled.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchOut.gif" />
+    <Content Include="App_Themes\Summer\Button\SearchOver.gif" />
+    <Content Include="App_Themes\Summer\Default.css" />
+    <Content Include="App_Themes\Summer\Images\Banner.png" />
+    <Content Include="App_Themes\Summer\Images\BannerBg.jpg" />
+    <Content Include="App_Themes\Summer\Images\bg.png" />
+    <Content Include="App_Themes\Summer\Images\bgcolor.gif" />
+    <Content Include="App_Themes\Summer\Images\Footer.jpg" />
+    <Content Include="App_Themes\Summer\Images\LeftMenuBg.png" />
+    <Content Include="App_Themes\Summer\Images\MainAreaMiddleBg.png" />
+    <Content Include="App_Themes\Summer\Images\MainMenu.jpg" />
+    <Content Include="App_Themes\Summer\Images\MainMenuOut.png" />
+    <Content Include="App_Themes\Summer\Images\MainMenuOver.png" />
+    <Content Include="App_Themes\Summer\Images\TopBanner.jpg" />
+    <Content Include="App_Themes\Summer\Images\TopBannerMenu.png" />
+    <Content Include="App_Themes\Summer\Images\TopBannerMenuLeft.png" />
+    <Content Include="App_Themes\Summer\Images\UserInfo.png" />
+    <Content Include="App_Themes\Summer\Images\WorkPlaceMainTopBg.png" />
+    <Content Include="App_Themes\Summer\Images\WorkPlaceTopHeader.png" />
+    <Content Include="App_Themes\Summer\Layout.css" />
+    <Content Include="App_Themes\Summer\LoginLayout.css" />
+    <Content Include="App_Themes\Summer\Login\left.jpg" />
+    <Content Include="App_Themes\Summer\Login\main.jpg" />
+    <Content Include="App_Themes\Summer\Login\right.jpg" />
+    <Content Include="App_Themes\Summer\WebControls.css" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\LeftMenu.ascx" />
+    <Content Include="Controls\MainMenu.ascx" />
+    <Content Include="Controls\TopBanner.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Include\loading.gif" />
+    <Content Include="Include\menu_close.gif" />
+    <Content Include="Include\menu_close_s.png" />
+    <Content Include="Include\menu_open.gif" />
+    <Content Include="Include\menu_open_s.png" />
+    <Content Include="Include\yaesoftb.ico" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessoriesDownload.ashx.cs">
+      <DependentUpon>AccessoriesDownload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduAudit.aspx.cs">
+      <DependentUpon>frmDSIEduAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduAudit.aspx.designer.cs">
+      <DependentUpon>frmDSIEduAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduAuditEdit.aspx.cs">
+      <DependentUpon>frmDSIEduAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduAuditEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIEduAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduAuditList.aspx.cs">
+      <DependentUpon>frmDSIEduAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduAuditList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptAllowanceDetail.aspx.cs">
+      <DependentUpon>frmDSIEduRptAllowanceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptAllowanceDetail.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptAllowanceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptProjectAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptProjectAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptProjectAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptProjectAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptStaffAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptStaffAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptStaffAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptStaffAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptTimeAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptTimeAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptTimeAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptTimeAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptUnitYearAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptUnitYearAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptUnitYearAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptUnitYearAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduRptYearAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduRptYearAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduRptYearAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduRptYearAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduSetBaseAdminEdit.aspx.cs">
+      <DependentUpon>frmDSIEduSetBaseAdminEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduSetBaseAdminEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIEduSetBaseAdminEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduSetBaseAdminList.aspx.cs">
+      <DependentUpon>frmDSIEduSetBaseAdminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduSetBaseAdminList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduSetBaseAdminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAllowanceList.aspx.cs">
+      <DependentUpon>frmDSIEduStaffAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduStaffAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAppFormReqEdit.aspx.cs">
+      <DependentUpon>frmDSIEduStaffAppFormReqEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAppFormReqEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIEduStaffAppFormReqEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAppFormReqList.aspx.cs">
+      <DependentUpon>frmDSIEduStaffAppFormReqList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduStaffAppFormReqList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduStaffAppFormReqList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEmployeeList.aspx.cs">
+      <DependentUpon>frmDSIEmployeeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEmployeeList.aspx.designer.cs">
+      <DependentUpon>frmDSIEmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEmployeePicker.aspx.cs">
+      <DependentUpon>frmDSIEmployeePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEmployeePicker.aspx.designer.cs">
+      <DependentUpon>frmDSIEmployeePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEmployeeUnitEdit.aspx.cs">
+      <DependentUpon>frmDSIEmployeeUnitEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEmployeeUnitEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIEmployeeUnitEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEmployeeUnitList.aspx.cs">
+      <DependentUpon>frmDSIEmployeeUnitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEmployeeUnitList.aspx.designer.cs">
+      <DependentUpon>frmDSIEmployeeUnitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSILogin.aspx.cs">
+      <DependentUpon>frmDSILogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSILogin.aspx.designer.cs">
+      <DependentUpon>frmDSILogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffAppFormReqEdit.aspx.cs">
+      <DependentUpon>frmDSIPersonalStaffAppFormReqEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffAppFormReqEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIPersonalStaffAppFormReqEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffAppFormReqList.aspx.cs">
+      <DependentUpon>frmDSIPersonalStaffAppFormReqList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffAppFormReqList.aspx.designer.cs">
+      <DependentUpon>frmDSIPersonalStaffAppFormReqList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffList.aspx.cs">
+      <DependentUpon>frmDSIPersonalStaffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIPersonalStaffList.aspx.designer.cs">
+      <DependentUpon>frmDSIPersonalStaffList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduStaffInfoEdit.aspx.cs">
+      <DependentUpon>frmDSIEduStaffInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduStaffInfoEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIEduStaffInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIEduStaffInfoList.aspx.cs">
+      <DependentUpon>frmDSIEduStaffInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIEduStaffInfoList.aspx.designer.cs">
+      <DependentUpon>frmDSIEduStaffInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIProjectEdit.aspx.cs">
+      <DependentUpon>frmDSIProjectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIProjectEdit.aspx.designer.cs">
+      <DependentUpon>frmDSIProjectEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIProjectList.aspx.cs">
+      <DependentUpon>frmDSIProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIProjectList.aspx.designer.cs">
+      <DependentUpon>frmDSIProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIPublicityStaffRequestList.aspx.cs">
+      <DependentUpon>frmDSIPublicityStaffRequestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIPublicityStaffRequestList.aspx.designer.cs">
+      <DependentUpon>frmDSIPublicityStaffRequestList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolAudit.aspx.cs">
+      <DependentUpon>frmDSISchoolAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolAudit.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolAuditEdit.aspx.cs">
+      <DependentUpon>frmDSISchoolAuditEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolAuditEdit.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolAuditEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolAuditList.aspx.cs">
+      <DependentUpon>frmDSISchoolAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolAuditList.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAllowanceList.aspx.cs">
+      <DependentUpon>frmDSISchoolStaffAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolStaffAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAppFormReqEdit.aspx.cs">
+      <DependentUpon>frmDSISchoolStaffAppFormReqEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAppFormReqEdit.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolStaffAppFormReqEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAppFormReqList.aspx.cs">
+      <DependentUpon>frmDSISchoolStaffAppFormReqList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffAppFormReqList.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolStaffAppFormReqList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffInfoEdit.aspx.cs">
+      <DependentUpon>frmDSISchoolStaffInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffInfoEdit.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolStaffInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffInfoList.aspx.cs">
+      <DependentUpon>frmDSISchoolStaffInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolStaffInfoList.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolStaffInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIStaffAppFormReqPrint.aspx.cs">
+      <DependentUpon>frmDSIStaffAppFormReqPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIStaffAppFormReqPrint.aspx.designer.cs">
+      <DependentUpon>frmDSIStaffAppFormReqPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIStaffPicker.aspx.cs">
+      <DependentUpon>frmDSIStaffPicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIStaffPicker.aspx.designer.cs">
+      <DependentUpon>frmDSIStaffPicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSIUnitList.aspx.cs">
+      <DependentUpon>frmDSIUnitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSIUnitList.aspx.designer.cs">
+      <DependentUpon>frmDSIUnitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSISchoolRptAllowanceList.aspx.cs">
+      <DependentUpon>frmDSISchoolRptAllowanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDSISchoolRptAllowanceList.aspx.designer.cs">
+      <DependentUpon>frmDSISchoolRptAllowanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCStaff.ascx.cs">
+      <DependentUpon>UCStaff.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCStaff.ascx.designer.cs">
+      <DependentUpon>UCStaff.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCStaffFamily.ascx.cs">
+      <DependentUpon>UCStaffFamily.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCStaffFamily.ascx.designer.cs">
+      <DependentUpon>UCStaffFamily.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCStaffInfo.ascx.cs">
+      <DependentUpon>UCStaffInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCStaffInfo.ascx.designer.cs">
+      <DependentUpon>UCStaffInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCStaffReq.ascx.cs">
+      <DependentUpon>UCStaffReq.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCStaffReq.ascx.designer.cs">
+      <DependentUpon>UCStaffReq.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\iPower\iPower.Data\iPower.Data.csproj">
+      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
+      <Name>iPower.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.FileStorage\iPower.FileStorage.csproj">
+      <Project>{360996BC-89FB-4906-8AE3-77380EA9BE08}</Project>
+      <Name>iPower.FileStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
+      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
+      <Name>iPower.Platform.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Platform.UI\iPower.Platform.UI.csproj">
+      <Project>{F3918067-F289-4990-BFF6-A9D7064601BA}</Project>
+      <Name>iPower.Platform.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Platform\iPower.Platform.csproj">
+      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
+      <Name>iPower.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Resources\iPower.Resources.csproj">
+      <Project>{5BAE93E8-A48C-48F6-8726-C65379B22658}</Project>
+      <Name>iPower.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower.Web\iPower.Web.csproj">
+      <Project>{6E1C506F-A613-459C-BAA2-F8A412680C1E}</Project>
+      <Name>iPower.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
+      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
+      <Name>iPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
+      <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
+      <Name>iPower.IRMP.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Security.Client\iPower.IRMP.Security.Client.csproj">
+      <Project>{2ED372A4-83E4-4269-9537-C9E972E1BD4A}</Project>
+      <Name>iPower.IRMP.Security.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SSOClient\iPower.IRMP.SSOClient.csproj">
+      <Project>{B544B8DF-44E0-4830-B512-DC5277BD81F2}</Project>
+      <Name>iPower.IRMP.SSOClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SysMgr.Engine\iPower.IRMP.SysMgr.Engine.csproj">
+      <Project>{ABB00055-104A-4157-8C7E-C281C42F0BDC}</Project>
+      <Name>iPower.IRMP.SysMgr.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP\iPower.IRMP.csproj">
+      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
+      <Name>iPower.IRMP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SFIT\Yaesoft.Furong\Yaesoft.Furong.csproj">
+      <Project>{67E73266-2783-4139-BFC3-D2C7FBC42FB1}</Project>
+      <Name>Yaesoft.Furong</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yaesoft.DSI.Engine\Yaesoft.DSI.Engine.csproj">
+      <Project>{42837A01-AB80-4CA7-B906-72A4FC33582E}</Project>
+      <Name>Yaesoft.DSI.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="Security\iPower.IRMP.Security.Web.csproj">
+      <Project>{3DD3CEED-C71E-464C-A1BA-6145F7CCEBAD}</Project>
+      <Name>iPower.IRMP.Security.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="SSO\iPower.IRMP.SSOService.csproj">
+      <Project>{9D585CE0-8E94-4101-A3EE-CC33FEE97DEC}</Project>
+      <Name>iPower.IRMP.SSOService</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sys\iPower.IRMP.SysMgr.Web.csproj">
+      <Project>{C8AABA00-8F02-4CC6-BC6D-401F388AC890}</Project>
+      <Name>iPower.IRMP.SysMgr.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_SecurityModuleConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Share\ModuleBaseMaster.Master" />
+    <Content Include="Share\ModuleFrameMasterPage.Master" />
+    <Content Include="Share\ModuleFrameSetMasterPage.Master" />
+    <Content Include="Share\ModuleNormalMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\IRMP_SysMgrModuleConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessoriesDownload.ashx" />
+    <Content Include="frmDSILogin.aspx" />
+    <Content Include="Include\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Summer\Images\topbanner_blank.jpg" />
+    <Content Include="frmDSIEmployeeList.aspx" />
+    <Content Include="frmDSIEmployeePicker.aspx" />
+    <Content Include="frmDSIEmployeeUnitEdit.aspx" />
+    <Content Include="frmDSIEmployeeUnitList.aspx" />
+    <Content Include="frmDSIPersonalStaffList.aspx" />
+    <Content Include="frmDSIEduStaffInfoEdit.aspx" />
+    <Content Include="frmDSIEduStaffInfoList.aspx" />
+    <Content Include="frmDSIUnitList.aspx" />
+    <Content Include="jquery-easyui\easyloader.js" />
+    <Content Include="jquery-easyui\jquery-1.9.1.min.js" />
+    <Content Include="jquery-easyui\jquery-2.0.min.js" />
+    <Content Include="jquery-easyui\jquery.easyui.min.js" />
+    <Content Include="jquery-easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="jquery-easyui\themes\black\accordion.css" />
+    <Content Include="jquery-easyui\themes\black\calendar.css" />
+    <Content Include="jquery-easyui\themes\black\combo.css" />
+    <Content Include="jquery-easyui\themes\black\combobox.css" />
+    <Content Include="jquery-easyui\themes\black\datagrid.css" />
+    <Content Include="jquery-easyui\themes\black\datebox.css" />
+    <Content Include="jquery-easyui\themes\black\dialog.css" />
+    <Content Include="jquery-easyui\themes\black\easyui.css" />
+    <Content Include="jquery-easyui\themes\black\images\accordion_arrows.png" />
+    <Content Include="jquery-easyui\themes\black\images\blank.gif" />
+    <Content Include="jquery-easyui\themes\black\images\calendar_arrows.png" />
+    <Content Include="jquery-easyui\themes\black\images\combo_arrow.png" />
+    <Content Include="jquery-easyui\themes\black\images\datagrid_icons.png" />
+    <Content Include="jquery-easyui\themes\black\images\datebox_arrow.png" />
+    <Content Include="jquery-easyui\themes\black\images\layout_arrows.png" />
+    <Content Include="jquery-easyui\themes\black\images\linkbutton_bg.png" />
+    <Content Include="jquery-easyui\themes\black\images\loading.gif" />
+    <Content Include="jquery-easyui\themes\black\images\menu_arrows.png" />
+    <Content Include="jquery-easyui\themes\black\images\messager_icons.png" />
+    <Content Include="jquery-easyui\themes\black\images\pagination_icons.png" />
+    <Content Include="jquery-easyui\themes\black\images\panel_tools.png" />
+    <Content Include="jquery-easyui\themes\black\images\searchbox_button.png" />
+    <Content Include="jquery-easyui\themes\black\images\slider_handle.png" />
+    <Content Include="jquery-easyui\themes\black\images\spinner_arrows.png" />
+    <Content Include="jquery-easyui\themes\black\images\tabs_icons.png" />
+    <Content Include="jquery-easyui\themes\black\images\tree_icons.png" />
+    <Content Include="jquery-easyui\themes\black\images\validatebox_warning.png" />
+    <Content Include="jquery-easyui\themes\black\layout.css" />
+    <Content Include="jquery-easyui\themes\black\linkbutton.css" />
+    <Content Include="jquery-easyui\themes\black\menu.css" />
+    <Content Include="jquery-easyui\themes\black\menubutton.css" />
+    <Content Include="jquery-easyui\themes\black\messager.css" />
+    <Content Include="jquery-easyui\themes\black\pagination.css" />
+    <Content Include="jquery-easyui\themes\black\panel.css" />
+    <Content Include="jquery-easyui\themes\black\progressbar.css" />
+    <Content Include="jquery-easyui\themes\black\propertygrid.css" />
+    <Content Include="jquery-easyui\themes\black\searchbox.css" />
+    <Content Include="jquery-easyui\themes\black\slider.css" />
+    <Content Include="jquery-easyui\themes\black\spinner.css" />
+    <Content Include="jquery-easyui\themes\black\splitbutton.css" />
+    <Content Include="jquery-easyui\themes\black\tabs.css" />
+    <Content Include="jquery-easyui\themes\black\tooltip.css" />
+    <Content Include="jquery-easyui\themes\black\tree.css" />
+    <Content Include="jquery-easyui\themes\black\validatebox.css" />
+    <Content Include="jquery-easyui\themes\black\window.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\accordion.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\calendar.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\combo.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\combobox.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\datagrid.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\datebox.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\dialog.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\easyui.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="jquery-easyui\themes\bootstrap\layout.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\linkbutton.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\menu.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\menubutton.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\messager.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\pagination.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\panel.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\progressbar.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\propertygrid.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\searchbox.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\slider.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\spinner.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\splitbutton.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\tabs.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\tooltip.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\tree.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\validatebox.css" />
+    <Content Include="jquery-easyui\themes\bootstrap\window.css" />
+    <Content Include="jquery-easyui\themes\default\accordion.css" />
+    <Content Include="jquery-easyui\themes\default\calendar.css" />
+    <Content Include="jquery-easyui\themes\default\combo.css" />
+    <Content Include="jquery-easyui\themes\default\combobox.css" />
+    <Content Include="jquery-easyui\themes\default\datagrid.css" />
+    <Content Include="jquery-easyui\themes\default\datebox.css" />
+    <Content Include="jquery-easyui\themes\default\dialog.css" />
+    <Content Include="jquery-easyui\themes\default\easyui.css" />
+    <Content Include="jquery-easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="jquery-easyui\themes\default\images\blank.gif" />
+    <Content Include="jquery-easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="jquery-easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="jquery-easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="jquery-easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="jquery-easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="jquery-easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="jquery-easyui\themes\default\images\loading.gif" />
+    <Content Include="jquery-easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="jquery-easyui\themes\default\images\messager_icons.png" />
+    <Content Include="jquery-easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="jquery-easyui\themes\default\images\panel_tools.png" />
+    <Content Include="jquery-easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="jquery-easyui\themes\default\images\slider_handle.png" />
+    <Content Include="jquery-easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="jquery-easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="jquery-easyui\themes\default\images\tree_icons.png" />
+    <Content Include="jquery-easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="jquery-easyui\themes\default\layout.css" />
+    <Content Include="jquery-easyui\themes\default\linkbutton.css" />
+    <Content Include="jquery-easyui\themes\default\menu.css" />
+    <Content Include="jquery-easyui\themes\default\menubutton.css" />
+    <Content Include="jquery-easyui\themes\default\messager.css" />
+    <Content Include="jquery-easyui\themes\default\pagination.css" />
+    <Content Include="jquery-easyui\themes\default\panel.css" />
+    <Content Include="jquery-easyui\themes\default\progressbar.css" />
+    <Content Include="jquery-easyui\themes\default\propertygrid.css" />
+    <Content Include="jquery-easyui\themes\default\searchbox.css" />
+    <Content Include="jquery-easyui\themes\default\slider.css" />
+    <Content Include="jquery-easyui\themes\default\spinner.css" />
+    <Content Include="jquery-easyui\themes\default\splitbutton.css" />
+    <Content Include="jquery-easyui\themes\default\tabs.css" />
+    <Content Include="jquery-easyui\themes\default\tooltip.css" />
+    <Content Include="jquery-easyui\themes\default\tree.css" />
+    <Content Include="jquery-easyui\themes\default\validatebox.css" />
+    <Content Include="jquery-easyui\themes\default\window.css" />
+    <Content Include="jquery-easyui\themes\gray\accordion.css" />
+    <Content Include="jquery-easyui\themes\gray\calendar.css" />
+    <Content Include="jquery-easyui\themes\gray\combo.css" />
+    <Content Include="jquery-easyui\themes\gray\combobox.css" />
+    <Content Include="jquery-easyui\themes\gray\datagrid.css" />
+    <Content Include="jquery-easyui\themes\gray\datebox.css" />
+    <Content Include="jquery-easyui\themes\gray\dialog.css" />
+    <Content Include="jquery-easyui\themes\gray\easyui.css" />
+    <Content Include="jquery-easyui\themes\gray\images\accordion_arrows.png" />
+    <Content Include="jquery-easyui\themes\gray\images\blank.gif" />
+    <Content Include="jquery-easyui\themes\gray\images\calendar_arrows.png" />
+    <Content Include="jquery-easyui\themes\gray\images\combo_arrow.png" />
+    <Content Include="jquery-easyui\themes\gray\images\datagrid_icons.png" />
+    <Content Include="jquery-easyui\themes\gray\images\datebox_arrow.png" />
+    <Content Include="jquery-easyui\themes\gray\images\layout_arrows.png" />
+    <Content Include="jquery-easyui\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="jquery-easyui\themes\gray\images\loading.gif" />
+    <Content Include="jquery-easyui\themes\gray\images\menu_arrows.png" />
+    <Content Include="jquery-easyui\themes\gray\images\messager_icons.png" />
+    <Content Include="jquery-easyui\themes\gray\images\pagination_icons.png" />
+    <Content Include="jquery-easyui\themes\gray\images\panel_tools.png" />
+    <Content Include="jquery-easyui\themes\gray\images\searchbox_button.png" />
+    <Content Include="jquery-easyui\themes\gray\images\slider_handle.png" />
+    <Content Include="jquery-easyui\themes\gray\images\spinner_arrows.png" />
+    <Content Include="jquery-easyui\themes\gray\images\tabs_icons.png" />
+    <Content Include="jquery-easyui\themes\gray\images\tree_icons.png" />
+    <Content Include="jquery-easyui\themes\gray\images\validatebox_warning.png" />
+    <Content Include="jquery-easyui\themes\gray\layout.css" />
+    <Content Include="jquery-easyui\themes\gray\linkbutton.css" />
+    <Content Include="jquery-easyui\themes\gray\menu.css" />
+    <Content Include="jquery-easyui\themes\gray\menubutton.css" />
+    <Content Include="jquery-easyui\themes\gray\messager.css" />
+    <Content Include="jquery-easyui\themes\gray\pagination.css" />
+    <Content Include="jquery-easyui\themes\gray\panel.css" />
+    <Content Include="jquery-easyui\themes\gray\progressbar.css" />
+    <Content Include="jquery-easyui\themes\gray\propertygrid.css" />
+    <Content Include="jquery-easyui\themes\gray\searchbox.css" />
+    <Content Include="jquery-easyui\themes\gray\slider.css" />
+    <Content Include="jquery-easyui\themes\gray\spinner.css" />
+    <Content Include="jquery-easyui\themes\gray\splitbutton.css" />
+    <Content Include="jquery-easyui\themes\gray\tabs.css" />
+    <Content Include="jquery-easyui\themes\gray\tooltip.css" />
+    <Content Include="jquery-easyui\themes\gray\tree.css" />
+    <Content Include="jquery-easyui\themes\gray\validatebox.css" />
+    <Content Include="jquery-easyui\themes\gray\window.css" />
+    <Content Include="jquery-easyui\themes\icon.css" />
+    <Content Include="jquery-easyui\themes\icons\back.png" />
+    <Content Include="jquery-easyui\themes\icons\blank.gif" />
+    <Content Include="jquery-easyui\themes\icons\cancel.png" />
+    <Content Include="jquery-easyui\themes\icons\cut.png" />
+    <Content Include="jquery-easyui\themes\icons\edit_add.png" />
+    <Content Include="jquery-easyui\themes\icons\edit_remove.png" />
+    <Content Include="jquery-easyui\themes\icons\filesave.png" />
+    <Content Include="jquery-easyui\themes\icons\help.png" />
+    <Content Include="jquery-easyui\themes\icons\mini_add.png" />
+    <Content Include="jquery-easyui\themes\icons\mini_edit.png" />
+    <Content Include="jquery-easyui\themes\icons\mini_refresh.png" />
+    <Content Include="jquery-easyui\themes\icons\no.png" />
+    <Content Include="jquery-easyui\themes\icons\ok.png" />
+    <Content Include="jquery-easyui\themes\icons\pencil.png" />
+    <Content Include="jquery-easyui\themes\icons\print.png" />
+    <Content Include="jquery-easyui\themes\icons\redo.png" />
+    <Content Include="jquery-easyui\themes\icons\reload.png" />
+    <Content Include="jquery-easyui\themes\icons\search.png" />
+    <Content Include="jquery-easyui\themes\icons\sum.png" />
+    <Content Include="jquery-easyui\themes\icons\tip.png" />
+    <Content Include="jquery-easyui\themes\icons\undo.png" />
+    <Content Include="jquery-easyui\themes\metro\accordion.css" />
+    <Content Include="jquery-easyui\themes\metro\calendar.css" />
+    <Content Include="jquery-easyui\themes\metro\combo.css" />
+    <Content Include="jquery-easyui\themes\metro\combobox.css" />
+    <Content Include="jquery-easyui\themes\metro\datagrid.css" />
+    <Content Include="jquery-easyui\themes\metro\datebox.css" />
+    <Content Include="jquery-easyui\themes\metro\dialog.css" />
+    <Content Include="jquery-easyui\themes\metro\easyui.css" />
+    <Content Include="jquery-easyui\themes\metro\images\accordion_arrows.png" />
+    <Content Include="jquery-easyui\themes\metro\images\blank.gif" />
+    <Content Include="jquery-easyui\themes\metro\images\calendar_arrows.png" />
+    <Content Include="jquery-easyui\themes\metro\images\combo_arrow.png" />
+    <Content Include="jquery-easyui\themes\metro\images\datagrid_icons.png" />
+    <Content Include="jquery-easyui\themes\metro\images\datebox_arrow.png" />
+    <Content Include="jquery-easyui\themes\metro\images\layout_arrows.png" />
+    <Content Include="jquery-easyui\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="jquery-easyui\themes\metro\images\loading.gif" />
+    <Content Include="jquery-easyui\themes\metro\images\menu_arrows.png" />
+    <Content Include="jquery-easyui\themes\metro\images\messager_icons.png" />
+    <Content Include="jquery-easyui\themes\metro\images\pagination_icons.png" />
+    <Content Include="jquery-easyui\themes\metro\images\panel_tools.png" />
+    <Content Include="jquery-easyui\themes\metro\images\searchbox_button.png" />
+    <Content Include="jquery-easyui\themes\metro\images\slider_handle.png" />
+    <Content Include="jquery-easyui\themes\metro\images\spinner_arrows.png" />
+    <Content Include="jquery-easyui\themes\metro\images\tabs_icons.png" />
+    <Content Include="jquery-easyui\themes\metro\images\tree_icons.png" />
+    <Content Include="jquery-easyui\themes\metro\images\validatebox_warning.png" />
+    <Content Include="jquery-easyui\themes\metro\layout.css" />
+    <Content Include="jquery-easyui\themes\metro\linkbutton.css" />
+    <Content Include="jquery-easyui\themes\metro\menu.css" />
+    <Content Include="jquery-easyui\themes\metro\menubutton.css" />
+    <Content Include="jquery-easyui\themes\metro\messager.css" />
+    <Content Include="jquery-easyui\themes\metro\pagination.css" />
+    <Content Include="jquery-easyui\themes\metro\panel.css" />
+    <Content Include="jquery-easyui\themes\metro\progressbar.css" />
+    <Content Include="jquery-easyui\themes\metro\propertygrid.css" />
+    <Content Include="jquery-easyui\themes\metro\searchbox.css" />
+    <Content Include="jquery-easyui\themes\metro\slider.css" />
+    <Content Include="jquery-easyui\themes\metro\spinner.css" />
+    <Content Include="jquery-easyui\themes\metro\splitbutton.css" />
+    <Content Include="jquery-easyui\themes\metro\tabs.css" />
+    <Content Include="jquery-easyui\themes\metro\tooltip.css" />
+    <Content Include="jquery-easyui\themes\metro\tree.css" />
+    <Content Include="jquery-easyui\themes\metro\validatebox.css" />
+    <Content Include="jquery-easyui\themes\metro\window.css" />
+    <Content Include="UCStaffFamily.ascx" />
+    <Content Include="UCStaffInfo.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DSI_StaffAppFormReqPrint.xslt" />
+    <Content Include="App_Data\DSI_StaffFieldsDesc.xml" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="frmDSIEduRptAllowanceDetail.aspx" />
+    <Content Include="frmDSIEduSetBaseAdminEdit.aspx" />
+    <Content Include="frmDSIEduSetBaseAdminList.aspx" />
+    <Content Include="Include\DSIBanner.png" />
+    <Content Include="frmDSIEduAudit.aspx" />
+    <Content Include="frmDSIEduAuditEdit.aspx" />
+    <Content Include="frmDSIEduAuditList.aspx" />
+    <Content Include="frmDSIEduRptAllowanceList.aspx" />
+    <Content Include="frmDSIEduRptProjectAllowanceList.aspx" />
+    <Content Include="frmDSIEduRptStaffAllowanceList.aspx" />
+    <Content Include="frmDSIEduRptTimeAllowanceList.aspx" />
+    <Content Include="frmDSIEduRptUnitYearAllowanceList.aspx" />
+    <Content Include="frmDSIEduRptYearAllowanceList.aspx" />
+    <Content Include="frmDSIEduStaffAllowanceList.aspx" />
+    <Content Include="frmDSIEduStaffAppFormReqEdit.aspx" />
+    <Content Include="frmDSIEduStaffAppFormReqList.aspx" />
+    <Content Include="frmDSIPersonalStaffAppFormReqEdit.aspx" />
+    <Content Include="frmDSIPersonalStaffAppFormReqList.aspx" />
+    <Content Include="frmDSIProjectEdit.aspx" />
+    <Content Include="frmDSIProjectList.aspx" />
+    <Content Include="frmDSIPublicityStaffRequestList.aspx" />
+    <Content Include="frmDSISchoolAudit.aspx" />
+    <Content Include="frmDSISchoolAuditEdit.aspx" />
+    <Content Include="frmDSISchoolAuditList.aspx" />
+    <Content Include="frmDSISchoolStaffAllowanceList.aspx" />
+    <Content Include="frmDSISchoolStaffAppFormReqEdit.aspx" />
+    <Content Include="frmDSISchoolStaffAppFormReqList.aspx" />
+    <Content Include="frmDSISchoolStaffInfoEdit.aspx" />
+    <Content Include="frmDSISchoolStaffInfoList.aspx" />
+    <Content Include="frmDSIStaffAppFormReqPrint.aspx" />
+    <Content Include="frmDSIStaffPicker.aspx" />
+    <Content Include="frmDSISchoolRptAllowanceList.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="jquery-slides\font-awesome.min.css" />
+    <Content Include="jquery-slides\slides.css" />
+    <Content Include="jquery-slides\js\jquery.slides.min.js" />
+    <Content Include="jquery-slides\img\pagination.png" />
+    <Content Include="UCStaff.ascx" />
+    <Content Include="UCStaffReq.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="downloads\困难教职工慰问帮扶工作实施方案.doc" />
+    <None Include="downloads\困难职工救助申请表.doc" />
+    <None Include="jquery-slides\font\fontawesome-webfont.eot" />
+    <None Include="jquery-slides\font\fontawesome-webfont.svg" />
+    <None Include="jquery-slides\font\fontawesome-webfont.ttf" />
+    <None Include="jquery-slides\font\fontawesome-webfont.woff" />
+    <None Include="jquery-slides\font\FontAwesome.otf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2818</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Yaesoft.DSI.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://dsi.yaesoft.net</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

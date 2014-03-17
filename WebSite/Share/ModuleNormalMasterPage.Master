@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Share/ModuleBaseMaster.Master" Inherits="Yaesoft.DSI.Web.ModuleBaseMasterPage" %>
+
+<asp:Content ID="ContentPlace" ContentPlaceHolderID="ContentPlace" runat="server">
+    <div class="NormalMainArea" data-options="region:'center',border:false">
+        <asp:ContentPlaceHolder ID="workPlace" runat="server" />
+    </div>
+</asp:Content>

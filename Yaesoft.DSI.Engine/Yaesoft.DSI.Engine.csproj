@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42837A01-AB80-4CA7-B906-72A4FC33582E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yaesoft.DSI.Engine</RootNamespace>
+    <AssemblyName>Yaesoft.DSI.Engine</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.FileStorage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.FileStorage\bin\Debug\iPower.FileStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IRMP\iPower.IRMP\bin\Debug\iPower.IRMP.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Platform.Engine\bin\Debug\iPower.Platform.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizedToVerifyProvider.cs" />
+    <Compile Include="delegates.cs" />
+    <Compile Include="Domain\Allowance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DSIAttachment.cs" />
+    <Compile Include="Domain\DSIEmployee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DSIEmployeeUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\DSIPeople.cs" />
+    <Compile Include="Domain\DSIProject.cs" />
+    <Compile Include="Domain\DSIProjectAttachment.cs" />
+    <Compile Include="Domain\DSIStaffAppFormAttachment.cs" />
+    <Compile Include="Domain\DSIStaffAppFormReq.cs" />
+    <Compile Include="Domain\DSIStaffFamilyMember.cs" />
+    <Compile Include="Domain\DSIStaffInfo.cs" />
+    <Compile Include="Domain\DSIStaffModifyRecord.cs" />
+    <Compile Include="Domain\DSIUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetLocalUserInfo.cs" />
+    <Compile Include="Handlers\BaseHandler.cs" />
+    <Compile Include="Handlers\HandlerUtils.cs" />
+    <Compile Include="Handlers\ProjectHandler.cs" />
+    <Compile Include="Handlers\StaffAllowanceHandler.cs" />
+    <Compile Include="Handlers\StaffModifyRecordHandler.cs" />
+    <Compile Include="OrgFactory.cs" />
+    <Compile Include="Persistence\DbModuleEntity.cs" />
+    <Compile Include="Persistence\DSIAttachmentEntity.cs" />
+    <Compile Include="Persistence\DSIEmployeeEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Persistence\DSIEmployeeUnitEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Persistence\DSIPeopleEntity.cs" />
+    <Compile Include="Persistence\DSIProjectAttachmentEntity.cs" />
+    <Compile Include="Persistence\DSIProjectEntity.cs" />
+    <Compile Include="Persistence\DSIRoleEmployeeEntity.cs" />
+    <Compile Include="Persistence\DSIStaffAppFormAttachmentEntity.cs" />
+    <Compile Include="Persistence\DSIStaffAppFormReqEntity.cs" />
+    <Compile Include="Persistence\DSIStaffFamilyMemberEntity.cs" />
+    <Compile Include="Persistence\DSIStaffInfoEntity.cs" />
+    <Compile Include="Persistence\DSIUnitEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Persistence\ModuleConfiguration.cs" />
+    <Compile Include="Persistence\ModuleConstants.cs" />
+    <Compile Include="Persistence\ModuleEnums.cs" />
+    <Compile Include="Persistence\ModuleUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\DefaultPresenter.cs" />
+    <Compile Include="Service\DSIAttachmentPresenter.cs" />
+    <Compile Include="Service\DSIEduAuditPresenter.cs" />
+    <Compile Include="Service\DSIEduRptAllowanceDetailPresenter.cs" />
+    <Compile Include="Service\DSIEduRptAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduRptProjectAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduRptStaffAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduRptTimeAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduRptUnitYearAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduRptYearAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduSetBaseAdminPresenter.cs" />
+    <Compile Include="Service\DSIEduStaffAllowancePresenter.cs" />
+    <Compile Include="Service\DSIEduStaffAppFormReqPresenter.cs" />
+    <Compile Include="Service\DSIEmployeePresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\DSIEmployeeUnitPresenter.cs" />
+    <Compile Include="Service\DSIIndexPresenter.cs" />
+    <Compile Include="Service\DSILoginPresenter.cs" />
+    <Compile Include="Service\DSIPersonalStaffPresenter.cs" />
+    <Compile Include="Service\DSIProjectPresenter.cs" />
+    <Compile Include="Service\DSIPublicityStaffRequestPresenter.cs" />
+    <Compile Include="Service\DSISchoolAuditPresenter.cs" />
+    <Compile Include="Service\DSISchoolRptAllowancePresenter.cs" />
+    <Compile Include="Service\DSISchoolStaffAllowancePresenter.cs" />
+    <Compile Include="Service\DSISchoolStaffAppFormReqPresenter.cs" />
+    <Compile Include="Service\DSISchoolStaffInfoPresenter.cs" />
+    <Compile Include="Service\DSIPersonalStaffAppFormReqPresenter.cs" />
+    <Compile Include="Service\DSIAuditPresenter.cs" />
+    <Compile Include="Service\DSIStaffAllowancePresenter.cs" />
+    <Compile Include="Service\DSIStaffAppFormReqPresenter.cs" />
+    <Compile Include="Service\DSIStaffAppFormReqPrintPresenter.cs" />
+    <Compile Include="Service\DSIStaffFamilyPresenter.cs" />
+    <Compile Include="Service\DSIEduStaffInfoPresenter.cs" />
+    <Compile Include="Service\DSIStaffInfoUCPresenter.cs" />
+    <Compile Include="Service\DSIStaffReqUCPresenter.cs" />
+    <Compile Include="Service\DSIStaffUCPresenter.cs" />
+    <Compile Include="Service\DSIUnitPresenter.cs" />
+    <Compile Include="Service\ModulePresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Security.Engine\iPower.IRMP.Security.Engine.csproj">
+      <Project>{7B7B998D-7496-4A29-A662-3472F49F8F84}</Project>
+      <Name>iPower.IRMP.Security.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SysMgr.Engine\iPower.IRMP.SysMgr.Engine.csproj">
+      <Project>{ABB00055-104A-4157-8C7E-C281C42F0BDC}</Project>
+      <Name>iPower.IRMP.SysMgr.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT\Yaesoft.SFIT.csproj">
+      <Project>{4FD4EFD8-C7E9-4A7E-A7EB-1B549FF5582B}</Project>
+      <Name>Yaesoft.SFIT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

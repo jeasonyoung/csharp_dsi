@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+	<FilterItem Order="0">
+		<Name>岗位状态</Name>
+		<TableName>tblDSIStaffInfo</TableName>
+		<TableFieldName>StaffStatus</TableFieldName>
+		<FilterItemValue ItemText="在岗" ItemValue="0x01" />
+		<FilterItemValue ItemText="离退休" ItemValue="0x02" />
+		<FilterItemValue ItemText="下(待)岗" ItemValue="0x04" />
+		<FilterItemValue ItemText="失(无)业" ItemValue="0x08" />
+		<FilterItemValue ItemText="内退" ItemValue="0x10" />
+		<FilterItemValue ItemText="农民工" ItemValue="0x20" />
+	</FilterItem>
+	
+	<FilterItem Order="1">
+		<Name>健康状况</Name>
+		<TableName>tblDSIStaffInfo</TableName>
+		<TableFieldName>HealthStatus</TableFieldName>
+		<FilterItemValue ItemText="良好" ItemValue="0x02" />
+		<FilterItemValue ItemText="癌症" ItemValue="0x03" />
+		<FilterItemValue ItemText="心血管病" ItemValue="0x04" />
+		<FilterItemValue ItemText="尿毒症" ItemValue="0x05" />
+		<FilterItemValue ItemText="精神病" ItemValue="0x06" />
+		<FilterItemValue ItemText="肝病" ItemValue="0x07" />
+		<FilterItemValue ItemText="血液病" ItemValue="0x08" />
+		<FilterItemValue ItemText="糖尿病" ItemValue="0x09" />
+		<FilterItemValue ItemText="肿瘤病" ItemValue="0x10" />
+		<FilterItemValue ItemText="腰颈椎病" ItemValue="0x11" />
+		<FilterItemValue ItemText="高血压病" ItemValue="0x12" />
+		<FilterItemValue ItemText="肺病" ItemValue="0x13" />
+		<FilterItemValue ItemText="一般疾病" ItemValue="0x14" />
+		<FilterItemValue ItemText="残疾" ItemValue="0x15" />
+	</FilterItem>
+	
+	<FilterItem Order="2">
+		<Name>住房类型</Name>
+		<TableName>tblDSIStaffInfo</TableName>
+		<TableFieldName>HouseType</TableFieldName>
+		<FilterItemValue ItemText="承租单位公房" ItemValue="0x00" />
+		<FilterItemValue ItemText="政府廉租房" ItemValue="0x01" />
+		<FilterItemValue ItemText="自购房" ItemValue="0x02" />
+		<FilterItemValue ItemText="其他" ItemValue="0x03" />
+	</FilterItem>
+
+	<FilterItem Order="3">
+		<Name>家庭年人均收入</Name>
+		<TableName>tblDSIStaffInfo</TableName>
+		<TableFieldName>AvgFamilyIncome</TableFieldName>
+	</FilterItem>
+	
+	<FilterItem Order="4">
+		<Name>主要困难情况</Name>
+		<TableName>tblDSIStaffInfo</TableName>
+		<TableFieldName>HardSituation</TableFieldName>
+	</FilterItem>
+</Filter>

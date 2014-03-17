@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEB86176-A6F3-456C-A471-B4847FADD118}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yaesoft.DSI.Sync</RootNamespace>
+    <AssemblyName>Yaesoft.DSI.Sync</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.WinService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iPower\iPower.WinService\bin\Debug\iPower.WinService.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yaesoft.Furong, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SFIT\Yaesoft.Furong\bin\Debug\Yaesoft.Furong.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbModuleEntity.cs" />
+    <Compile Include="DSIEmployee.cs" />
+    <Compile Include="DSIEmployeeEntity.cs" />
+    <Compile Include="DSIEmployeeUnit.cs" />
+    <Compile Include="DSIEmployeeUnitEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DSIUnit.cs" />
+    <Compile Include="DSIUnitEntity.cs" />
+    <Compile Include="ModuleConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityRoleEmployee.cs" />
+    <Compile Include="SecurityRoleEmployeeEntity.cs" />
+    <Compile Include="SyncServiceJob.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InstallWinService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iPower.WinService.Shell.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="UnInstallWinService.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT.DataSync\Yaesoft.SFIT.DataSync.csproj">
+      <Project>{D9C938BB-0399-4D95-BC9C-7D64FB1C8434}</Project>
+      <Name>Yaesoft.SFIT.DataSync</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT\Yaesoft.SFIT.csproj">
+      <Project>{4FD4EFD8-C7E9-4A7E-A7EB-1B549FF5582B}</Project>
+      <Name>Yaesoft.SFIT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

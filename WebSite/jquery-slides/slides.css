@@ -1,0 +1,13 @@
+﻿#slides{overflow:auto;display:none;}
+#slides .slidesjs-navigation{ margin-top:3px;}
+#slides .slidesjs-previous { float:left;margin-right:5px;}
+#slides .slidesjs-next {float:left;margin-right:5px;}
+.slidesjs-pagination {float: right; margin: 6px 0 0;list-style: none;}
+.slidesjs-pagination li {float: left;margin: 0 1px;}
+.slidesjs-pagination li a {float:left;display:block;width:13px;height:0;padding-top:13px;background-image: url(img/pagination.png);background-position: 0 0;overflow:hidden;}
+.slidesjs-pagination li a.active,.slidesjs-pagination li a:hover.active{background-position: 0 -13px}
+.slidesjs-pagination li a:hover {background-position: 0 -26px}
+#slides a:link,#slides a:visited{color: #333;}
+#slides a:hover,
+#slides a:active {color: #9e2020;}
+#slides div{ color:#065eb7;}

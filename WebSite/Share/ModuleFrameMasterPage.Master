@@ -1,0 +1,44 @@
+﻿<%--
+//================================================================================
+//  FileName: ModuleFrameMasterPage.Master
+//  Desc:
+//
+//  Called by
+//
+//  Auth:杨勇（jeason1914@gmail.com）
+//  Date: 2011/8/10
+//================================================================================
+//  Change History
+//================================================================================
+//  Date  Author  Description
+//  ----    ------  -----------------
+//
+//================================================================================
+//  Copyright (C) 2004-2009 Jeason Young Corporation
+//================================================================================
+//--%>
+<%@ Master Language="C#" MasterPageFile="~/Share/ModuleBaseMaster.Master" AutoEventWireup="true" Inherits="Yaesoft.DSI.Web.ModuleBaseMasterPage" %>
+<%@ Register Src="~/Controls/TopBanner.ascx" TagName="BannerUserControl" TagPrefix="iPower" %>
+<%--<%@ Register Src="~/Controls/MainMenu.ascx" TagName="MainMenuControl" TagPrefix="iPower" %>--%>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="FooterUserControl" TagPrefix="iPower" %>
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="ContentHead" runat="server">
+    <link rel="Shortcut Icon" type="image/ico" href="~/Include/yaesoftb.ico" />
+    <link rel="Bookmark" type="image/x-icon" href="~/Include/yaesoftb.ico" />
+    <link rel="icon" type="image/x-icon" href="~/Include/yaesoftb.ico" />    
+</asp:Content>
+
+<asp:Content ID="ContentPlace" ContentPlaceHolderID="ContentPlace" runat="server">
+    <!--头部-->
+    <div class="TopBanner" data-options="region:'north',border:false">
+        <iPower:BannerUserControl ID="BannerControl" runat="server" />
+    </div>
+    <!--中间主体-->
+    <div data-options="region:'center',border:false">
+        <asp:ContentPlaceHolder ID="MainPlace" runat="server" />
+    </div>
+    <!--底部版权-->
+    <div class="Footer" data-options="region:'south',border:false">
+        <iPower:FooterUserControl ID="FooterControl" runat="server" />
+    </div>
+</asp:Content>

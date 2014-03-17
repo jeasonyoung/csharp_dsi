@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Share/ModuleFrameMasterPage.Master" AutoEventWireup="true" Inherits="Yaesoft.DSI.Web.ModuleBaseMasterPage" %>
+<%@ Register Src="~/Controls/LeftMenu.ascx" TagName="LeftMenuControl" TagPrefix="iPower" %>
+<asp:Content ContentPlaceHolderID="MainPlace" runat="server">
+    <script type="text/javascript">
+    <!--
+        $(function() {
+            $("#MainAreaNavigation").panel("setTitle", "<%=this.ModulePage.NavigationContent %>");
+        });
+    //-->
+    </script>
+    <div class="easyui-layout" data-options="fit:true">
+        <div id="MainAreaLeftMenu" data-options="region:'west',title:' ',split:true" style="overflow-x:hidden;">
+            <iPower:LeftMenuControl ID="LeftMenuControl" runat="server" MenuType="TreeView" />
+        </div>
+        <div id="MainAreaNavigation" data-options="region:'center',title:' '" style="padding:5px;">
+            <asp:ContentPlaceHolder ID="workPlace" runat="server" />
+        </div>
+    </div>
+</asp:Content>

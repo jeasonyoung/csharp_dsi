@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <field column="StaffCode" desc="职工编号"/>
+  <field column="HardCategory" desc="困难类别"/>
+  <field column="StaffName" desc="姓名"/>
+  <field column="Gender" desc="性别"/>
+  <field column="PeopleID" desc="民族"/>
+  <field column="PoliticalFace" desc="政治面貌"/>
+  <field column="Birthday" desc="出生年月"/>
+  <field column="IDCard" desc="身份证号"/>
+  <field column="HealthStatus" desc="健康状况"/>
+  <field column="Disability" desc="残疾类别"/>
+  <field column="HouseType" desc="住房类型"/>
+  <field column="BuildArea" desc="建筑面积"/>
+  <field column="ZipCode" desc="邮政编码"/>
+  <field column="Contact" desc="联系电话"/>
+  <field column="TimeWorkStart" desc="参加工作年月"/>
+  <field column="Maritalstatus" desc="婚姻状况"/>
+  <field column="UnitID" desc="工作单位"/>
+  <field column="Address" desc="家庭住址"/>
+  <field column="SelfHelp" desc="是否有自救能力"/>
+  <field column="AvgIncome" desc="本人月均收入"/>
+  <field column="FamilyIncome" desc="家庭年度总收入"/>
+  <field column="FamilyCount" desc="家庭人口"/>
+  <field column="FamilyAvgIncome" desc="家庭月人均收入"/>
+  <field column="HardBecause" desc="致困主要原因"/>
+  <field column="HardBecauseDesc" desc=""/>
+  <field column="AttachmentID" desc="附件"/>
+
+  <field column="MemberName" desc="姓名"/>
+  <field column="Relation" desc="关系"/>
+  <field column="Income" desc="月收入"/>
+  <field column="Theidentity" desc="身份"/>
+  <field column="UnitSchool" desc="工作单位或学校"/>
+</root>
