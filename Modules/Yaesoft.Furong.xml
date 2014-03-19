@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yaesoft.Furong</name>
+    </assembly>
+    <members>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.HaveUser(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginHaveUser(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndHaveUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.HaveUserAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.HaveUserAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.VerifyUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginVerifyUser(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndVerifyUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.VerifyUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.VerifyUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUserInfo(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUserInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAtLeiXin(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUserInfoAtLeiXin(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUserInfoAtLeiXin(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAtLeiXinAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAtLeiXinAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitUserInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUnitUserInfo(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUnitUserInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitUserInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitUserInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfo2(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUserInfo2(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUserInfo2(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfo2Async(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfo2Async(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserPassWord(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUserPassWord(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUserPassWord(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserPassWordAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserPassWordAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitInfo">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUnitInfo(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUnitInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitInfoAsync">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitInfoAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitAllUserInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginGetUnitAllUserInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndGetUnitAllUserInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitAllUserInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitAllUserInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.SearchUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.BeginSearchUser(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.EndSearchUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.SearchUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.SearchUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.AuthHeaderValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.HaveUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.VerifyUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfoAtLeiXinCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserInfo2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUserPassWordCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.GetUnitAllUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.TeaProxy.TeaLoginService.SearchUserCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.AuthHeader">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.AuthHeader.UserName">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.AuthHeader.PassWord">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.AuthHeader.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.HaveUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.HaveUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.HaveUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.VerifyUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.VerifyUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.VerifyUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoAtLeiXinCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoAtLeiXinCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfoAtLeiXinCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitUserInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUnitUserInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfo2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfo2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUserInfo2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserPassWordCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUserPassWordCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUserPassWordCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUnitInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitAllUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.GetUnitAllUserInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.GetUnitAllUserInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.SearchUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.TeaProxy.SearchUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.TeaProxy.SearchUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.ModuleConfigurationKeys">
+            <summary>
+            模块配置键。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.SyncDataServiceUrlKey">
+            <summary>
+            获取同步数据接口URL地址键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.SyncDataServiceUsernameKey">
+            <summary>
+            获取同步数据接口用户键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.SyncDataServicePasswordKey">
+            <summary>
+            获取同步数据接口用户密码键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.TeaLoginServiceUrlKey">
+            <summary>
+            获取教师登陆验证接口URL地址键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.TeaLoginServiceUsernameKey">
+            <summary>
+            获取教师登陆验证接口用户键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.TeaLoginServicePasswordKey">
+            <summary>
+            获取教师登陆验证接口密码键名。
+            </summary>
+        </member>
+        <member name="F:Yaesoft.Furong.ModuleConfigurationKeys.GetUserInfoAssemblyKey">
+            <summary>
+            获取用户信息程序集键名。
+            </summary>
+        </member>
+        <member name="T:Yaesoft.Furong.ModuleConfiguration">
+            <summary>
+            模块配置。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.ModuleConfiguration.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="P:Yaesoft.Furong.ModuleConfiguration.ModuleConfig">
+            <summary>
+            获取静态实例。
+            </summary>
+        </member>
+        <member name="P:Yaesoft.Furong.ModuleConfiguration.SyncDataService">
+            <summary>
+            获取数据同步服务配置。
+            </summary>
+        </member>
+        <member name="P:Yaesoft.Furong.ModuleConfiguration.TeaLoginService">
+            <summary>
+            获取教师登陆服务配置。
+            </summary>
+        </member>
+        <member name="P:Yaesoft.Furong.ModuleConfiguration.GetUserInfoAssembly">
+            <summary>
+            获取用户信息程序集。
+            </summary>
+        </member>
+        <member name="T:Yaesoft.Furong.SoapDataSyncFactory">
+            <summary>
+            基于Soap1.2协议的Webservice访问实现.
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.#ctor">
+            <summary>
+            构造函数.
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.WebSoap12Post(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.getElementValue(System.Xml.XmlElement,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="xpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.createSoap12Message(Yaesoft.SFIT.DataSync.ServicePoxyAccount,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sp"></param>
+            <param name="bodyInner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.PostSoapWebService``1(Yaesoft.SFIT.DataSync.ServicePoxyAccount,System.String,Yaesoft.Furong.SoapDataSyncFactory.SoapCallbackParserHandler{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sp"></param>
+            <param name="bodyInner"></param>
+            <param name="handler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.SyncAllUnit">
+            <summary>
+            同步全部单位数据。
+            </summary>
+            <returns>单位数据集合。</returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.SyncAllTeachers(System.String)">
+            <summary>
+            同步学校名称下的教师数据。
+            </summary>
+            <param name="unitName">单位名称。</param>
+            <returns>教师数据集合。</returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.SyncAllClasses(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unitName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.SyncAllStudents(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unitName"></param>
+            <param name="joinYear"></param>
+            <param name="className"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.SoapDataSyncFactory.VerifyUser(System.Int32,System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="account"></param>
+            <param name="password"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yaesoft.Furong.SoapDataSyncFactory.SoapCallbackParserHandler`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="el"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.StuLoginService">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetAllSchool">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginGetAllSchool(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndGetAllSchool(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetAllSchoolAsync">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetAllSchoolAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetTeacher(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginGetTeacher(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndGetTeacher(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetTeacherAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetTeacherAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetClass(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginGetClass(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndGetClass(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetClassAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetClassAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetStudent(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginGetStudent(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndGetStudent(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetStudentAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetStudentAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginVerifyUser(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndVerifyUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUser2(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginVerifyUser2(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndVerifyUser2(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUser2Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUser2Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyJZ(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginVerifyJZ(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndVerifyJZ(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyJZAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyJZAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.UpPassWord(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.BeginUpPassWord(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.EndUpPassWord(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.UpPassWordAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.UpPassWordAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.AuthHeaderValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetAllSchoolCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetTeacherCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetClassCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.GetStudentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyUser2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.VerifyJZCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Yaesoft.Furong.Proxy.StuProxy.StuLoginService.UpPassWordCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.AuthHeader">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.AuthHeader.UserName">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.AuthHeader.PassWord">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.AuthHeader.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetAllSchoolCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetAllSchoolCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.GetAllSchoolCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetTeacherCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetTeacherCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.GetTeacherCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetClassCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetClassCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.GetClassCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetStudentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.GetStudentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.GetStudentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.VerifyUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyUser2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyUser2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.VerifyUser2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyJZCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.VerifyJZCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.VerifyJZCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.UpPassWordCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.Proxy.StuProxy.UpPassWordCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Yaesoft.Furong.Proxy.StuProxy.UpPassWordCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Yaesoft.Furong.StuLoginProxyFactory">
+            <summary>
+            学生登录代理工厂类。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.SyncAllUnit">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.SyncAllTeachers(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unitName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.SyncAllClasses(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unitName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.SyncAllStudents(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unitName"></param>
+            <param name="joinYear"></param>
+            <param name="className"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.VerifyUser(System.Int32,System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="account"></param>
+            <param name="password"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.StuLoginProxyFactory.GetLearnLevel(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="bjlx"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yaesoft.Furong.TeaLoginPoxyFactory">
+            <summary>
+            教师登陆代理工厂类。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.TeaLoginPoxyFactory.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.TeaLoginPoxyFactory.VerifyUser(System.Int32,System.String,System.String,System.String@)">
+            <summary>
+            验证教师用户。
+            </summary>
+            <param name="type"></param>
+            <param name="account"></param>
+            <param name="password"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yaesoft.Furong.DataSyncFactory">
+            <summary>
+            数据同步工厂类。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.SyncAllUnit">
+            <summary>
+            获取单位信息集合。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.SyncAllTeachers(System.String)">
+            <summary>
+            获取学校名称下的教师数据。
+            </summary>
+            <param name="unitName">单位名称。</param>
+            <returns>教师数据集合</returns>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.SyncAllClasses(System.String)">
+            <summary>
+             获取学校名称下的班级数据。
+            </summary>
+            <param name="unitName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.SyncAllStudents(System.String,System.String,System.String)">
+            <summary>
+            获取学校名称下的学生数据。
+            </summary>
+            <param name="unitName">学校名称。</param>
+            <param name="joinYear">入学年份。</param>
+            <param name="className">班级名称。</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.DataSyncFactory.VerifyUser(System.Int32,System.String,System.String,System.String@)">
+            <summary>
+            验证用户。
+            </summary>
+            <param name="type">用户类型，1-教师，2-学生。</param>
+            <param name="account">账号。</param>
+            <param name="password">密码。</param>
+            <param name="err">错误信息。</param>
+            <returns>学生验证成功返回学生学号，教师返回账号。</returns>
+        </member>
+        <member name="T:Yaesoft.Furong.AuthenticationProvider">
+            <summary>
+            提供单点登录身份认证接口。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.AuthenticationProvider.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:Yaesoft.Furong.AuthenticationProvider.ChangePassword(System.String,System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="userSign"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yaesoft.Furong.AuthenticationProvider.UserAuthorizationVerification(System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="userSign"></param>
+            <param name="password"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Yaesoft.Furong.AuthenticationProvider.CurrentUserID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaesoft.Furong.AuthenticationProvider.CurrentUserName">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

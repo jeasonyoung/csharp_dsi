@@ -33,27 +33,39 @@
   <ItemGroup>
     <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+      <HintPath>..\Modules\iPower.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+      <HintPath>..\Modules\iPower.Data.dll</HintPath>
     </Reference>
     <Reference Include="iPower.FileStorage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.FileStorage\bin\Debug\iPower.FileStorage.dll</HintPath>
+      <HintPath>..\Modules\iPower.FileStorage.dll</HintPath>
     </Reference>
     <Reference Include="iPower.IRMP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRMP\iPower.IRMP\bin\Debug\iPower.IRMP.dll</HintPath>
+      <HintPath>..\Modules\iPower.IRMP.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Security.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Security.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.SysMgr.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.SysMgr.Engine.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Platform\bin\Debug\iPower.Platform.dll</HintPath>
+      <HintPath>..\Modules\iPower.Platform.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Platform.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Platform.Engine\bin\Debug\iPower.Platform.Engine.dll</HintPath>
+      <HintPath>..\Modules\iPower.Platform.Engine.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -65,6 +77,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
+    <Reference Include="Yaesoft.SFIT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\Yaesoft.SFIT.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthorizedToVerifyProvider.cs" />
@@ -160,20 +176,6 @@
     <Compile Include="Service\DSIStaffUCPresenter.cs" />
     <Compile Include="Service\DSIUnitPresenter.cs" />
     <Compile Include="Service\ModulePresenter.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Security.Engine\iPower.IRMP.Security.Engine.csproj">
-      <Project>{7B7B998D-7496-4A29-A662-3472F49F8F84}</Project>
-      <Name>iPower.IRMP.Security.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SysMgr.Engine\iPower.IRMP.SysMgr.Engine.csproj">
-      <Project>{ABB00055-104A-4157-8C7E-C281C42F0BDC}</Project>
-      <Name>iPower.IRMP.SysMgr.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT\Yaesoft.SFIT.csproj">
-      <Project>{4FD4EFD8-C7E9-4A7E-A7EB-1B549FF5582B}</Project>
-      <Name>Yaesoft.SFIT</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

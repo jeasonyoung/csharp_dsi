@@ -33,15 +33,15 @@
   <ItemGroup>
     <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower\bin\Debug\iPower.dll</HintPath>
+      <HintPath>..\Modules\iPower.dll</HintPath>
     </Reference>
     <Reference Include="iPower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.Data\bin\Debug\iPower.Data.dll</HintPath>
+      <HintPath>..\Modules\iPower.Data.dll</HintPath>
     </Reference>
     <Reference Include="iPower.WinService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\iPower\iPower.WinService\bin\Debug\iPower.WinService.dll</HintPath>
+      <HintPath>..\Modules\iPower.WinService.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -49,7 +49,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="Yaesoft.Furong, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SFIT\Yaesoft.Furong\bin\Debug\Yaesoft.Furong.dll</HintPath>
+      <HintPath>..\Modules\Yaesoft.Furong.dll</HintPath>
+    </Reference>
+    <Reference Include="Yaesoft.SFIT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\Yaesoft.SFIT.dll</HintPath>
+    </Reference>
+    <Reference Include="Yaesoft.SFIT.DataSync, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\Yaesoft.SFIT.DataSync.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -78,16 +86,6 @@
     <None Include="UnInstallWinService.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT.DataSync\Yaesoft.SFIT.DataSync.csproj">
-      <Project>{D9C938BB-0399-4D95-BC9C-7D64FB1C8434}</Project>
-      <Name>Yaesoft.SFIT.DataSync</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SFIT\Yaesoft.SFIT\Yaesoft.SFIT.csproj">
-      <Project>{4FD4EFD8-C7E9-4A7E-A7EB-1B549FF5582B}</Project>
-      <Name>Yaesoft.SFIT</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

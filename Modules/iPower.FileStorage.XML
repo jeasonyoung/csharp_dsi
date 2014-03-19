@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iPower.FileStorage</name>
+    </assembly>
+    <members>
+        <member name="T:iPower.FileStorage.SQLServer.FileStorageFactory">
+            <summary>
+            数据库存储文件工厂类。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileStorageFactory.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileStorageFactory.Upload(System.String,System.Int64,System.Byte[])">
+            <summary>
+            上传文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <param name="offSet">偏移量。</param>
+            <param name="content">文件内容。</param>
+            <returns>成功返回True，失败False。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileStorageFactory.DeleteFile(System.String)">
+            <summary>
+            删除文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <returns>成功返回true,失败返回false。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileStorageFactory.Download(System.String)">
+            <summary>
+            下载文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <returns>文件数据。</returns>
+        </member>
+        <member name="T:iPower.FileStorage.SerializeQueueUtil`1">
+            <summary>
+            序列化处理队列
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.#ctor(System.String)">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.Instance(System.String)">
+            <summary>
+            获取对象实例。
+            </summary>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.Add(`0)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.OnExceptionRecord(System.Exception)">
+            <summary>
+            异常处理记录。
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:iPower.FileStorage.SerializeQueueUtil`1.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:iPower.FileStorage.SQLServer.FileDataStorage">
+            <summary>
+            数据存储。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileDataStorage.#ctor(iPower.FileStorage.IStorageConfig)">
+            <summary>
+            构造函数。
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileDataStorage.Upload(iPower.GUIDEx,System.String,System.String,System.Byte[])">
+            <summary>
+            上传文件。
+            </summary>
+            <param name="fileID">文件ID。</param>
+            <param name="fileName">文件名称。</param>
+            <param name="contentType">MIME内容类型。</param>
+            <param name="content">文件内容。</param>
+            <returns>成功返回True，失败False。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileDataStorage.DeleteFile(iPower.GUIDEx)">
+            <summary>
+            删除文件。
+            </summary>
+            <param name="fileID">文件ID。</param>
+            <returns>成功返回true,失败返回false。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.SQLServer.FileDataStorage.Download(iPower.GUIDEx,System.String@,System.String@)">
+            <summary>
+            下载文件。
+            </summary>
+            <param name="fileID">文件ID。</param>
+            <param name="fullFileName">文件名称(包括后缀名)。</param>
+            <param name="contentType">MIME内容类型。</param>
+            <returns>文件数据流。</returns>
+        </member>
+        <member name="T:iPower.FileStorage.FileSystem.FileStorageFactory">
+            <summary>
+            文件存储文件数据工厂类。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.FileSystem.FileStorageFactory.#ctor">
+            <summary>
+            构造函数。
+            </summary>
+        </member>
+        <member name="M:iPower.FileStorage.FileSystem.FileStorageFactory.Upload(System.String,System.Int64,System.Byte[])">
+            <summary>
+            上传文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <param name="offSet">偏移量。</param>
+            <param name="content">文件内容。</param>
+            <returns>成功返回True，失败False。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.FileSystem.FileStorageFactory.DeleteFile(System.String)">
+            <summary>
+            删除文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <returns>成功返回true,失败返回false。</returns>
+        </member>
+        <member name="M:iPower.FileStorage.FileSystem.FileStorageFactory.Download(System.String)">
+            <summary>
+            下载文件。
+            </summary>
+            <param name="fileName">文件名称。</param>
+            <returns>文件数据。</returns>
+        </member>
+    </members>
+</doc>

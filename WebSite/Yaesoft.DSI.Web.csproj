@@ -30,6 +30,58 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="iPower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Security.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Security.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Security.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Security.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.Security.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.Security.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.SSOClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.SSOClient.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.SSOService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.SSOService.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.SysMgr.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.SysMgr.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.IRMP.SysMgr.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.IRMP.SysMgr.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Platform.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="iPower.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5e4fdab5c91944da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\iPower.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -37,6 +89,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="Yaesoft.Furong, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Modules\Yaesoft.Furong.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\DSI_ModuleConfig.xml" />
@@ -457,77 +513,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\iPower\iPower.Data\iPower.Data.csproj">
-      <Project>{49E097D0-FCDA-4CB2-A27D-CA4EDCD5403B}</Project>
-      <Name>iPower.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.FileStorage\iPower.FileStorage.csproj">
-      <Project>{360996BC-89FB-4906-8AE3-77380EA9BE08}</Project>
-      <Name>iPower.FileStorage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.Platform.Engine\iPower.Platform.Engine.csproj">
-      <Project>{BF08EF30-A60B-40E1-8FAE-243E964ECBB6}</Project>
-      <Name>iPower.Platform.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.Platform.UI\iPower.Platform.UI.csproj">
-      <Project>{F3918067-F289-4990-BFF6-A9D7064601BA}</Project>
-      <Name>iPower.Platform.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.Platform\iPower.Platform.csproj">
-      <Project>{349E7E3F-0050-4728-A5D5-8A7ADD0F9FAF}</Project>
-      <Name>iPower.Platform</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.Resources\iPower.Resources.csproj">
-      <Project>{5BAE93E8-A48C-48F6-8726-C65379B22658}</Project>
-      <Name>iPower.Resources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower.Web\iPower.Web.csproj">
-      <Project>{6E1C506F-A613-459C-BAA2-F8A412680C1E}</Project>
-      <Name>iPower.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\iPower\iPower\iPower.csproj">
-      <Project>{ACF5A361-DFCF-4346-921C-060DB79E7F19}</Project>
-      <Name>iPower</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Engine\iPower.IRMP.Engine.csproj">
-      <Project>{7EE919AF-588F-403B-81FB-E2B462341C66}</Project>
-      <Name>iPower.IRMP.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.Security.Client\iPower.IRMP.Security.Client.csproj">
-      <Project>{2ED372A4-83E4-4269-9537-C9E972E1BD4A}</Project>
-      <Name>iPower.IRMP.Security.Client</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SSOClient\iPower.IRMP.SSOClient.csproj">
-      <Project>{B544B8DF-44E0-4830-B512-DC5277BD81F2}</Project>
-      <Name>iPower.IRMP.SSOClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP.SysMgr.Engine\iPower.IRMP.SysMgr.Engine.csproj">
-      <Project>{ABB00055-104A-4157-8C7E-C281C42F0BDC}</Project>
-      <Name>iPower.IRMP.SysMgr.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\IRMP\iPower.IRMP\iPower.IRMP.csproj">
-      <Project>{3AC24990-D86C-4989-84DC-4EDF9592520C}</Project>
-      <Name>iPower.IRMP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SFIT\Yaesoft.Furong\Yaesoft.Furong.csproj">
-      <Project>{67E73266-2783-4139-BFC3-D2C7FBC42FB1}</Project>
-      <Name>Yaesoft.Furong</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Yaesoft.DSI.Engine\Yaesoft.DSI.Engine.csproj">
       <Project>{42837A01-AB80-4CA7-B906-72A4FC33582E}</Project>
       <Name>Yaesoft.DSI.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="Security\iPower.IRMP.Security.Web.csproj">
-      <Project>{3DD3CEED-C71E-464C-A1BA-6145F7CCEBAD}</Project>
-      <Name>iPower.IRMP.Security.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="SSO\iPower.IRMP.SSOService.csproj">
-      <Project>{9D585CE0-8E94-4101-A3EE-CC33FEE97DEC}</Project>
-      <Name>iPower.IRMP.SSOService</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sys\iPower.IRMP.SysMgr.Web.csproj">
-      <Project>{C8AABA00-8F02-4CC6-BC6D-401F388AC890}</Project>
-      <Name>iPower.IRMP.SysMgr.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
