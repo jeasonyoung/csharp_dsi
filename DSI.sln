@@ -1,6 +1,10 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "困难教职工", "困难教职工", "{2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaesoft.DSI.Documents", "Documents\Yaesoft.DSI.Documents.csproj", "{6E8F0F17-8173-45A6-B667-D5A3454226FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaesoft.DSI.Engine", "Yaesoft.DSI.Engine\Yaesoft.DSI.Engine.csproj", "{42837A01-AB80-4CA7-B906-72A4FC33582E}"
@@ -9,13 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaesoft.DSI.Web", "WebSite\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaesoft.DSI.Sync", "Yaesoft.DSI.Sync\Yaesoft.DSI.Sync.csproj", "{BEB86176-A6F3-456C-A471-B4847FADD118}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "困难教职工", "困难教职工", "{2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}"
-EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -42,9 +40,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{6E8F0F17-8173-45A6-B667-D5A3454226FC} = {2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}
 		{42837A01-AB80-4CA7-B906-72A4FC33582E} = {2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}
 		{AD29C238-4710-4FF7-BD67-4F76E51902A2} = {2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}
 		{BEB86176-A6F3-456C-A471-B4847FADD118} = {2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}
-		{6E8F0F17-8173-45A6-B667-D5A3454226FC} = {2130FF1A-13AB-4791-B24F-2E5A0F4EBC1B}
 	EndGlobalSection
 EndGlobal
