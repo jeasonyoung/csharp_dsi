@@ -18,6 +18,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -103,6 +108,85 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\DSI_ModuleConfig.xml" />
+    <Content Include="App_Themes\Furong\Button\AddDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\AddOut.gif" />
+    <Content Include="App_Themes\Furong\Button\AddOver.gif" />
+    <Content Include="App_Themes\Furong\Button\ApprovalDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\ApprovalOut.gif" />
+    <Content Include="App_Themes\Furong\Button\ApprovalOver.gif" />
+    <Content Include="App_Themes\Furong\Button\BatchDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\BatchOut.gif" />
+    <Content Include="App_Themes\Furong\Button\BatchOver.gif" />
+    <Content Include="App_Themes\Furong\Button\btnBg.gif" />
+    <Content Include="App_Themes\Furong\Button\CancelDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\CancelOut.gif" />
+    <Content Include="App_Themes\Furong\Button\CancelOver.gif" />
+    <Content Include="App_Themes\Furong\Button\DelDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\DelOut.gif" />
+    <Content Include="App_Themes\Furong\Button\DelOver.gif" />
+    <Content Include="App_Themes\Furong\Button\Disabled.gif" />
+    <Content Include="App_Themes\Furong\Button\DisableDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\DisableOut.gif" />
+    <Content Include="App_Themes\Furong\Button\DisableOver.gif" />
+    <Content Include="App_Themes\Furong\Button\EnableDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\EnableOut.gif" />
+    <Content Include="App_Themes\Furong\Button\EnableOver.gif" />
+    <Content Include="App_Themes\Furong\Button\ExportDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\ExportOut.gif" />
+    <Content Include="App_Themes\Furong\Button\ExportOver.gif" />
+    <Content Include="App_Themes\Furong\Button\HaveReadDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\HaveReadOut.gif" />
+    <Content Include="App_Themes\Furong\Button\HaveReadOver.gif" />
+    <Content Include="App_Themes\Furong\Button\ImportDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\ImportOut.gif" />
+    <Content Include="App_Themes\Furong\Button\ImportOver.gif" />
+    <Content Include="App_Themes\Furong\Button\LoginOut.png" />
+    <Content Include="App_Themes\Furong\Button\LoginOver.png" />
+    <Content Include="App_Themes\Furong\Button\Out.gif" />
+    <Content Include="App_Themes\Furong\Button\Over.gif" />
+    <Content Include="App_Themes\Furong\Button\SaveDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\SaveOut.gif" />
+    <Content Include="App_Themes\Furong\Button\SaveOver.gif" />
+    <Content Include="App_Themes\Furong\Button\SearchDisabled.gif" />
+    <Content Include="App_Themes\Furong\Button\SearchOut.gif" />
+    <Content Include="App_Themes\Furong\Button\SearchOver.gif" />
+    <Content Include="App_Themes\Furong\Default.css" />
+    <Content Include="App_Themes\Furong\Images\Banner.png" />
+    <Content Include="App_Themes\Furong\Images\BannerBg.jpg" />
+    <Content Include="App_Themes\Furong\Images\bg.png" />
+    <Content Include="App_Themes\Furong\Images\bgcolor.gif" />
+    <Content Include="App_Themes\Furong\Images\Footer.jpg" />
+    <Content Include="App_Themes\Furong\Images\index_01.gif" />
+    <Content Include="App_Themes\Furong\Images\index_02.gif" />
+    <Content Include="App_Themes\Furong\Images\index_03.gif" />
+    <Content Include="App_Themes\Furong\Images\index_04.gif" />
+    <Content Include="App_Themes\Furong\Images\index_05.gif" />
+    <Content Include="App_Themes\Furong\Images\index_06.gif" />
+    <Content Include="App_Themes\Furong\Images\index_07.gif" />
+    <Content Include="App_Themes\Furong\Images\index_08.gif" />
+    <Content Include="App_Themes\Furong\Images\index_09.gif" />
+    <Content Include="App_Themes\Furong\Images\index_10.gif" />
+    <Content Include="App_Themes\Furong\Images\index_11.gif" />
+    <Content Include="App_Themes\Furong\Images\index_12.gif" />
+    <Content Include="App_Themes\Furong\Images\index_13.gif" />
+    <Content Include="App_Themes\Furong\Images\index_14.gif" />
+    <Content Include="App_Themes\Furong\Images\index_16.gif" />
+    <Content Include="App_Themes\Furong\Images\index_17.gif" />
+    <Content Include="App_Themes\Furong\Images\LeftMenuBg.png" />
+    <Content Include="App_Themes\Furong\Images\MainAreaMiddleBg.png" />
+    <Content Include="App_Themes\Furong\Images\MainMenu.jpg" />
+    <Content Include="App_Themes\Furong\Images\MainMenuOut.png" />
+    <Content Include="App_Themes\Furong\Images\MainMenuOver.png" />
+    <Content Include="App_Themes\Furong\Images\TopBanner.jpg" />
+    <Content Include="App_Themes\Furong\Images\TopBannerMenu.png" />
+    <Content Include="App_Themes\Furong\Images\TopBannerMenuLeft.png" />
+    <Content Include="App_Themes\Furong\Images\topbanner_blank.jpg" />
+    <Content Include="App_Themes\Furong\Images\UserInfo.png" />
+    <Content Include="App_Themes\Furong\Images\WorkPlaceMainTopBg.png" />
+    <Content Include="App_Themes\Furong\Images\WorkPlaceTopHeader.png" />
+    <Content Include="App_Themes\Furong\Layout.css" />
+    <Content Include="App_Themes\Furong\LoginLayout.css" />
+    <Content Include="App_Themes\Furong\WebControls.css" />
     <Content Include="App_Themes\Summer\Button\AddDisabled.gif" />
     <Content Include="App_Themes\Summer\Button\AddOut.gif" />
     <Content Include="App_Themes\Summer\Button\AddOver.gif" />
@@ -860,6 +944,7 @@
     <None Include="jquery-slides\font\fontawesome-webfont.woff" />
     <None Include="jquery-slides\font\FontAwesome.otf" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

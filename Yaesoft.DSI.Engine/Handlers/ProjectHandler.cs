@@ -66,7 +66,7 @@ namespace Yaesoft.DSI.Engine.Handlers
                 }
                 catch (Exception) { }
             }
-            List<DSIProject> list = this.projectEntity.LoadProjects(4, isView);
+            List<DSIProject> list = this.projectEntity.LoadProjects(1, isView);
             string result = JsonConvert.SerializeObject(list);
             context.Response.Clear();
             context.Response.ContentEncoding = Encoding.GetEncoding("utf-8");
