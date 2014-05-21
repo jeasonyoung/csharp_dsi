@@ -1,12 +1,13 @@
 ﻿/****************************************************************************************
 * 按钮样式表
 *****************************************************************************************/
+@charset "utf-8";
 .BtnFlatMouseOut,.BtnFlatMouseOver,.BtnFlatDisabled
 {
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 	
 	text-align:center;
 	font-size: 9pt;
@@ -31,7 +32,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnLoginMouseOut
 {
@@ -50,7 +51,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnAddMouseOut
 {
@@ -70,7 +71,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnSaveMouseOut
 {
@@ -90,7 +91,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnCancelMouseOut
 {
@@ -110,7 +111,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnDelMouseOut
 {
@@ -130,7 +131,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnSearchMouseOut
 {
@@ -150,7 +151,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnExportMouseOut
 {
@@ -170,7 +171,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnImportMouseOut
 {
@@ -190,7 +191,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnEnableMouseOut
 {
@@ -210,7 +211,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnDisableMouseOut
 {
@@ -230,7 +231,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnBatchMouseOut
 {
@@ -250,7 +251,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnApprovalMouseOut
 {
@@ -270,7 +271,7 @@
 	border-width:0px;
 	height:24px;
 	width: 70px;
-	cursor:hand;
+	cursor:pointer;
 }
 .BtnHavereadMouseOut
 {

@@ -155,6 +155,9 @@
     <Content Include="App_Themes\Furong\Images\BannerBg.jpg" />
     <Content Include="App_Themes\Furong\Images\bg.png" />
     <Content Include="App_Themes\Furong\Images\bgcolor.gif" />
+    <Content Include="App_Themes\Furong\Images\content_02.jpg" />
+    <Content Include="App_Themes\Furong\Images\content_03.jpg" />
+    <Content Include="App_Themes\Furong\Images\content_13.jpg" />
     <Content Include="App_Themes\Furong\Images\Footer.jpg" />
     <Content Include="App_Themes\Furong\Images\index_01.gif" />
     <Content Include="App_Themes\Furong\Images\index_02.gif" />
@@ -263,7 +266,9 @@
     <Content Include="Include\menu_open.gif" />
     <Content Include="Include\menu_open_s.png" />
     <Content Include="Include\yaesoftb.ico" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessoriesDownload.ashx.cs">

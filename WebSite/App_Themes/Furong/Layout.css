@@ -15,8 +15,8 @@ body
 	margin:0 auto;
 	font-size:12px;
     font-family:"宋体";
-    background-color:#fff;
-	border-color:#f5f5f5;
+    /*background-color:#AFDF55;*/
+	/*border-color:#f5f5f5;*/
 	height:100%;
 	
 	SCROLLBAR-FACE-COLOR: #E8E8E8; 
@@ -56,71 +56,58 @@ img
 /*Global end*/
 
 /*layout begin*/
-.TopBanner,.MainMenu,.Footer,#MainArea
+.TopBanner,.Footer
 {
 	/*width:1024px;*/
 	margin:0 auto;
 	padding-top:0px;
 	text-align:center;
-	border-left:solid 1px #F5FAFD;
-	border-right:solid 1px #F5FAFD;
+	border-left:solid 1px #68a976;
+	border-right:solid 1px #68a976;
+}
+#MainAreaNavigation,.panel-body{
+    background:url("Images/content_13.jpg");
 }
 .TopBanner
 {
-	height:86px;
-	/*background-image:url("Images/TopBanner.jpg");*/
-	/*background-image:url("Images/BannerBg.jpg");*/
-	background:url(Images/topbanner_blank.jpg) repeat-x left top;
+	height:71px;
+	background:url(Images/content_02.jpg);
+    overflow:hidden;
 }
-.MainMenu
-{
-	height:31px;
-	background-image:url("Images/MainMenu.jpg");
+.TopBanner > div{
+    width:98%;
+    height:100%;
+    background:url("Images/content_03.jpg");
+    background-repeat:no-repeat;
+    background-position:50px 0%;
+    text-align:right;
+    padding-top:20px;
+    *padding-top:20px;
+    padding-right:20px;
+    *padding-right:20px;
 }
-#MainArea
-{
-	background-color:#f5fafc;
+.TopBanner > div > ul{
+    float:right;
+    list-style:none;
 }
+.TopBanner > div > ul li{
+    float:left;
+}
+
 .Footer
 {
 	color:#04295c;
 	height:27px;
-	background-image:url("Images/Footer.jpg");
-}
-#MainAreaLeftMenu,.MainAreaMiddle,.MainAreaRight
-{
-	height:100%;
+    background-color:#1A7A30;
 }
 #MainAreaLeftMenu
 {
 	float:left;
 	width:193px;
+    height:100%;
 	background-color:#f0f7fb;
 	background-image:url("Images/LeftMenuBg.png");
 	background-repeat:no-repeat;
-}
-.MainAreaMiddle
-{
-	float:left;
-	width:8px;
-	cursor:pointer;
-	white-space:nowrap;
-	background-color:#f0f7fb;
-	background-image:url("Images/MainAreaMiddleBg.png");
-	background-repeat:repeat-y;
-    vertical-align:middle;
-    overflow:hidden;
-}
-.MainAreaMiddle image
-{
-	float:left;
-	margin-top:200px;
-}
-.MainAreaRight
-{
-	width:820px;
-	white-space:nowrap;
-	text-align:center;
 }
 /*layout end*/
 
@@ -131,6 +118,6 @@ img
 	width:100%;
 	height:100%;
 	overflow:auto;
-	background-color:#f5fafc;
+	background-color:#AFDF55;
 }
 /*普通页面 end*/

@@ -19,12 +19,12 @@
 //--%>
 <%@ Master Language="C#" AutoEventWireup="true" Inherits="Yaesoft.DSI.Web.ModuleBaseMasterPage" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
     <head runat="server">
         <title></title>
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <link rel="stylesheet" href="~/jquery-easyui/themes/icon.css" type="text/css"/>
 	    <link rel="stylesheet" href="~/jquery-easyui/themes/default/easyui.css" type="text/css"/>
 	    <script type="text/javascript" charset="utf-8" src="<%#Request.ApplicationPath %>/jquery-easyui/jquery-1.9.1.min.js"></script>
