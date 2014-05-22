@@ -93,6 +93,7 @@
 .loginPanel .row5 .row5_2 .row5_2_1,.loginPanel .row5 .row5_2 .row5_2_2{
     float:left;
     height:220px;
+    /*overflow:auto;*/
 }
 .loginPanel .row5 .row5_2 .row5_2_1{
     width:50%;

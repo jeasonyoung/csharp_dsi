@@ -56,6 +56,7 @@
                                 }
                                 html += "</div>";
                                 $("#login_ative").append(html);
+                                return false;
                             });
                         }
                     }
@@ -92,7 +93,7 @@
                 <div class="row5_2_2">
                     <p>
                         <strong>补助活动</strong>
-                        <p id="login_ative" style="overflow-y:auto;"></p>
+                        <div id="login_ative" style="overflow:auto;"></div>
                     </p>
                 </div>
             </div>

@@ -5,8 +5,8 @@
         var t = $("#<%=this.ClientID%>_tree").tree({
             data:<%=JsonData%>,
             lines:true,
-            onClick:function(node){
-                location.href = "<%=Request.ApplicationPath %>" + node.attributes.url;
+            formatter:function(node){
+                return "<a href='"+ node.attributes.url+"' target='_self'>"+node.text+"</a>"
             }
         });
         var node = t.tree("find", "<%=this.CurrentFolderID%>");
