@@ -28,6 +28,8 @@ using iPower.Platform.Engine.Persistence;
 using iPower.Platform.Engine.Service;
 using Yaesoft.DSI.Engine.Persistence;
 using Yaesoft.DSI.Engine.Service;
+using iPower.Platform;
+using System.Text;
 namespace Yaesoft.DSI.Web
 {
     /// <summary>
@@ -260,20 +262,11 @@ namespace Yaesoft.DSI.Web
     {
         #region 成员变量，构造函数。
         private ModulePresenter<IModuleView> presenter;
-        private System.Data.DataTable dtSource;
         /// <summary>
         /// 构造函数。
         /// </summary>
         public LeftMenu()
         {
-            this.dtSource = new System.Data.DataTable();
-            this.dtSource.Columns.Add("ModuleID", typeof(System.String));
-            this.dtSource.Columns.Add("ParentModuleID", typeof(System.String));
-            this.dtSource.Columns.Add("ModuleName", typeof(System.String));
-            this.dtSource.Columns.Add("ModuleUri", typeof(System.String));
-            this.dtSource.Columns.Add("OrderNo", typeof(System.Int32));
-            this.dtSource.PrimaryKey = new System.Data.DataColumn[] { this.dtSource.Columns["ModuleID"] };
-
             this.presenter = new ModulePresenter<IModuleView>(this);
         }
         #endregion
@@ -281,27 +274,8 @@ namespace Yaesoft.DSI.Web
         /// <summary>
         /// 
         /// </summary>
-        protected global::iPower.Web.OutlookView.OutlookView tvMenuOutlook;
-        /// <summary>
-        /// 
-        /// </summary>
-        protected global::iPower.Web.TreeView.TreeView tvMenuTree;
+        public string JsonData { get; protected set; }
 
-        /// <summary>
-        /// 获取或设置菜单风格类型。
-        /// </summary>
-        public EnumMenuType MenuType
-        {
-            get
-            {
-                object obj = this.ViewState["MenuType"];
-                return obj == null ? EnumMenuType.Outlook : (EnumMenuType)obj;
-            }
-            set
-            {
-                this.ViewState["MenuType"] = value;
-            }
-        }
         /// <summary>
         /// 
         /// </summary>
@@ -312,6 +286,40 @@ namespace Yaesoft.DSI.Web
             if (!this.IsPostBack) this.presenter.InitializeComponent();
         }
 
+        private string createNodeData(ModuleDefine data)
+        {
+            if (data == null) return null;
+            StringBuilder builder = new StringBuilder();
+            builder.Append("{")
+                   .Append("\"").Append("id").Append("\"").Append(":").Append("\"").Append(data.ModuleID).Append("\"").Append(",")
+                   .Append("\"").Append("text").Append("\"").Append(":").Append("\"").Append(data.ModuleName).Append("\"").Append(",")
+                   .Append("\"").Append("attributes").Append("\"").Append(":")
+                   .Append("{")
+                   .Append("\"").Append("url").Append("\"").Append(":").Append("\"").Append(data.ModuleUri).Append("\"")
+                   .Append("}");
+           
+            if (data.Modules != null && data.Modules.Count > 0)
+            {
+                builder.Append(",")
+                       .Append("\"").Append("children").Append("\"").Append(":").Append("[");
+                int index = 0;
+                foreach(ModuleDefine child in data.Modules)
+                {
+                    string result = this.createNodeData(child);
+                    if (!string.IsNullOrEmpty(result))
+                    {
+                        if (index > 0) builder.Append(",");
+                        builder.Append(result);
+                        index += 1;
+                    }
+                }
+                builder.Append("]");
+            }
+            builder.Append("}");
+            if (builder.Length > 0) return builder.ToString();
+            return null;
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -319,101 +327,24 @@ namespace Yaesoft.DSI.Web
         {
             this.Page.LoadComplete += new EventHandler(delegate(object sender, EventArgs e)
             {
-                iPower.Platform.ModuleDefineCollection collection = this.MenuData;
+                StringBuilder builder = new StringBuilder("[");
+                ModuleDefineCollection collection = this.MenuData;
                 if (collection != null)
                 {
-                    this.BuilderModuleDefineDataSource(ref this.dtSource, collection);
-                }
-
-                if (this.dtSource != null && this.dtSource.Rows.Count > 0)
-                {
-                    iPower.Web.TreeView.TreeView treeView = null;
-                    switch (this.MenuType)
-                    {
-                        case EnumMenuType.Outlook:
-                            treeView = this.tvMenuOutlook;
-                            break;
-                        case EnumMenuType.TreeView:
-                            treeView = this.tvMenuTree;
-                            break;
-                    }
-                    if (treeView != null)
-                    {
-                        treeView.DataSource = this.dtSource.Copy();
-                        treeView.IDField = "ModuleID";
-                        treeView.PIDField = "ParentModuleID";
-                        treeView.TitleField = "ModuleName";
-                        treeView.HrefField = "ModuleUri";
-                        treeView.OrderNoField = "OrderNo";
-
-                        string currentFolderID = this.CurrentFolderID;
-                        if (string.IsNullOrEmpty(currentFolderID))
-                            currentFolderID = this.SecurityID;
-
-                        treeView.Visible = true;
-                        treeView.CurrentFolderValue = currentFolderID;
-                        treeView.BuildTree();
-
-                        iPower.Web.TreeView.TreeViewNode node = treeView.Items[currentFolderID];
-                        if (node != null)
+                    int index = 0;
+                    foreach(ModuleDefine data in collection){
+                        string result = this.createNodeData(data);
+                        if (!string.IsNullOrEmpty(result))
                         {
-                            bool flag = false;
-                            iPower.Web.TreeView.TreeViewNode p = node.Parent;
-                            while (p != null)
-                            {
-                                p.Expand = flag = true;
-                                p = p.Parent;
-                            }
-                            if (flag)
-                                treeView.DataBind();
+                            if (index > 0) builder.Append(",");
+                            builder.Append(result);
+                            index += 1;
                         }
                     }
                 }
+                builder.Append("]");
+                this.JsonData = builder.ToString();
             });
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="dt"></param>
-        /// <param name="collection"></param>
-        private void BuilderModuleDefineDataSource(ref System.Data.DataTable dt, iPower.Platform.ModuleDefineCollection collection)
-        {
-            if (collection != null)
-            {
-                System.Data.DataRow dr = null;
-                foreach (iPower.Platform.ModuleDefine d in collection)
-                {
-                    if (dt.Rows.Find(d.ModuleID) == null)
-                    {
-                        dr = dt.NewRow();
-                        dr["ModuleID"] = d.ModuleID;
-                        dr["ParentModuleID"] = (d.Parent == null) ? string.Empty : d.Parent.ModuleID;
-                        dr["ModuleName"] = d.ModuleName;
-                        dr["ModuleUri"] = d.ModuleUri;
-                        dr["OrderNo"] = d.OrderNo;
-                        dt.Rows.Add(dr);
-                    }
-                    if (d.Modules != null && d.Modules.Count > 0)
-                    {
-                        this.BuilderModuleDefineDataSource(ref dt, d.Modules);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// 菜单类型枚举。
-        /// </summary>
-        public enum EnumMenuType
-        {
-            /// <summary>
-            /// Outlook风格。
-            /// </summary>
-            Outlook = 0,
-            /// <summary>
-            /// 树形风格。
-            /// </summary>
-            TreeView = 1
         }
     }
     /// <summary>

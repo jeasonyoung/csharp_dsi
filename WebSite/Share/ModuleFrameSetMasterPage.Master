@@ -10,7 +10,7 @@
     </script>
     <div class="easyui-layout" data-options="fit:true">
         <div id="MainAreaLeftMenu" data-options="region:'west',title:'心系职工 亲情服务',split:true" style="overflow-x:hidden;">
-            <iPower:LeftMenuControl ID="LeftMenuControl" runat="server" MenuType="TreeView" />
+            <iPower:LeftMenuControl ID="LeftMenuControl" runat="server"/>
         </div>
         <div id="MainAreaNavigation" data-options="region:'center',title:' '" style="padding:5px;">
             <asp:ContentPlaceHolder ID="workPlace" runat="server" />
