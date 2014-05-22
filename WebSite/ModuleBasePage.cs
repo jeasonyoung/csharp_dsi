@@ -283,7 +283,9 @@ namespace Yaesoft.DSI.Web
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            if (!this.IsPostBack) this.presenter.InitializeComponent();
+            if (!this.IsPostBack) 
+                this.presenter.InitializeComponent();
+            this.LoadData();
         }
 
         private string createNodeData(ModuleDefine data)
