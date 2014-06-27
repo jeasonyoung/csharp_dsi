@@ -36,15 +36,15 @@
             <div style="float:left; width:96%;">
                 <JWC:LabelEx ID="lbPrimaryAllowance" runat="server" Style="float:left; margin-top:7px;" meta:resourcekey="DSI_PrimaryAllowance">拟申请补助金额：</JWC:LabelEx>
                 <JWC:RadioButtonListEx ID="rdPrimaryAllowance" runat="server" RepeatDirection="Vertical" RepeatColumns="3" IsRequired="true" ErrorMessage="拟申请补助金额不能空选！">
-                    <asp:ListItem Text="800元" Value="800" />
-                    <asp:ListItem Text="1000元" Value="1000" />
-                    <asp:ListItem Text="2000元" Value="2000" />
-                    <asp:ListItem Text="3000元" Value="3000" />
-                    <asp:ListItem Text="4000元" Value="4000" />
-                    <asp:ListItem Text="5000元" Value="5000" />
+                    <%--<asp:ListItem Text="800元" Value="800" />--%>
+                    <asp:ListItem Text="小额(1000元)" Value="1000" />
+                    <asp:ListItem Text="中额(2000元)" Value="2000" />
+                   <%-- <asp:ListItem Text="3000元" Value="3000" />--%>
+                    <asp:ListItem Text="中额(4000元)" Value="4000" />
+                    <%--<asp:ListItem Text="5000元" Value="5000" />
                     <asp:ListItem Text="6000元" Value="6000" />
-                    <asp:ListItem Text="8000元" Value="8000" />
-                    <asp:ListItem Text="10000元" Value="10000" />
+                    <asp:ListItem Text="8000元" Value="8000" />--%>
+                    <asp:ListItem Text="大额(10000元)" Value="10000" />
                 </JWC:RadioButtonListEx>
             </div>
             <div style="float:left; width:96%;">

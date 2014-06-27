@@ -63,7 +63,17 @@ namespace Yaesoft.DSI.Web
         {
             try
             {
-                if (this.presenter.Audit(float.Parse(this.rdPrimaryAllowance.SelectedValue), int.Parse(this.rdAuditStatus.SelectedValue)))
+                String allowanceValue = this.rdPrimaryAllowance.SelectedValue;
+                if (String.IsNullOrEmpty(allowanceValue))
+                {
+                    throw new Exception("请选择补助金额！");
+                }
+                String auditStatus = this.rdAuditStatus.SelectedValue;
+                if (String.IsNullOrEmpty(auditStatus))
+                {
+                    throw new Exception("请选择审核结果！");
+                }
+                if (this.presenter.Audit(float.Parse(allowanceValue), int.Parse(auditStatus)))
                     this.SaveData();
             }
             catch (Exception ex)
