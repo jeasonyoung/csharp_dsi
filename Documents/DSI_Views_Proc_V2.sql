@@ -124,11 +124,17 @@ go
 create view vwDSIStaffAppFormReq
 as
 	select a.ProjectID,b.ProjectName,c.UnitID,d.UnitName,
-	a.StaffID,c.StaffName,c.Gender,c.IDCard,datediff(year,c.Birthday,getdate()) as Age,c.HardCategory,c.HardBecause,
-	c.Theidentity,c.Maritalstatus,
+	a.StaffID,c.StaffName,
+	isnull(c.Gender,0x00) as Gender,
+	c.IDCard,datediff(year,c.Birthday,getdate()) as Age,
+	isnull(c.HardCategory,0x03) as HardCategory,
+	isnull(c.HardBecause,0x01) as HardBecause,
+	isnull(c.Theidentity,0x01) as Theidentity,
+	isnull(c.Maritalstatus,0x01) as Maritalstatus,
 	a.PrimaryAllowance,a.FinalAllowance,
 	convert(nvarchar(4),a.CreateTime,121) as CreateYear,a.CreateTime,
-	a.Status,a.CreateUserID,a.CreateUserName
+	isnull(a.Status,0x00) as Status,
+	a.CreateUserID,a.CreateUserName
 	from tblDSIStaffAppFormReq a
 	left outer join tblDSIProject b
 	on b.ProjectID = a.ProjectID
