@@ -78,7 +78,7 @@
 		        </JWC:BoundFieldEx>
     			
 		        <JWC:MultiQueryStringFieldEx PopupWin="true" WinType="Modal" WinWidth="970px" WinHeight="680px"
-			        DataNavigateUrlFormatString="frmDSIEduStaffAppFormReqEdit.aspx?StaffID={0}&ProjectID={1}" DataNavigateUrlField="StaffID,ProjectID"
+			        DataNavigateUrlFormatString="frmDSISchoolStaffAppFormReqEdit.aspx?StaffID={0}&ProjectID={1}" DataNavigateUrlField="StaffID,ProjectID"
 			        HeaderText="申报职工" DataField="StaffName" SortExpression="StaffName" meta:resourcekey="DSI_DGV_StaffName">
 			        <HeaderStyle Width="6%" HorizontalAlign="Center" />
 			        <ItemStyle HorizontalAlign="Left" />
